@@ -51,13 +51,12 @@ function Portfolio() {
           </aside>
 
           <div className="p-6 shadow-inner text-center font-semibold">
-            <h1 className="text-5xl font-bold ">About Me</h1>
-            <p className="text-slate-400 mt-2">
-              I am a product-minded front-end developer passionate about crafting clean, accessible user
-              interfaces and delightful experiences.
+            <h1 className="text-7xl font-bold ">About Me</h1>
+            <p className="text-white-400 mt-10">
+              Hi! I'm an undergraduate at SLIIT, currently in my 2nd year, 2nd semester, following the BSc (Hons) in Information Technology specialization program. I love creating digital solutions, exploring new technologies, and developing projects that challenge my creativity and logic.
+              I'm always excited to learn, experiment, and improve my skills — whether it’s coding, UI/UX, problem-solving, or building full-stack applications. My goal is to grow into a skilled IT professional who can contribute to meaningful and innovative tech projects.
             </p>
             <p className="text-slate-500 mt-3">
-              UX-focused • responsive-first • performance-conscious • accessibility-aware
             </p>
             
           </div>
@@ -66,49 +65,67 @@ function Portfolio() {
         {/* PROJECTS - FIX APPLIED HERE */}
         <section id="projects" className="mt-20 pt-24 -mt-24 mb-10">
           <div className="text-center font-semibold">
-            <h2 className="text-5xl font-bold">Projects</h2>
+            <h2 className="text-7xl font-bold">Projects</h2>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-4 mt-4">
-            
+          <div className="grid md:grid-cols-3 gap-5 place-items-center mt-20 ">
+            <div className="rounded-xl hover:scale-105 transition-transform hover:shadow-lg hover:shadow-indigo-500">
+              <a href="https://www.figma.com/design/uDQzaCvBLnq9CuiFqL0Y3U/Fitness-app-UI?node-id=0-1&t=7K7vLm2k5WJeNH1b-1" target="_blank">
+                <img src="/fitness.png" alt="" className=" rounded-xl w-full object-cover"/>
+              </a>
+            </div>
+            <div className="rounded-xl hover:scale-105 transition-transform hover:shadow-lg hover:shadow-indigo-500">
+              <a href="https://www.figma.com/design/JxkcaP2i9ZdSJPhryIMmUh/MobileApp?node-id=0-1&t=Io9uRAOcc7jFXFqS-1" target="_blank">
+                <img src="/healthTracker.png" alt="" className=" rounded-xl w-full object-cover"/>
+              </a>
+            </div>
+            <div className="rounded-xl hover:scale-105 transition-transform hover:shadow-lg hover:shadow-indigo-500">
+              <a href="" target="_blank">
+                <img src="/penguin.png" alt="" className=" rounded-xl w-full object-cover"/>
+              </a>
+            </div>
+            <div className="rounded-xl hover:scale-105 transition-transform hover:shadow-lg hover:shadow-indigo-500">
+              <a href="https://github.com/VDewMin/Livora.git" target="_blank">
+                <img src="/Livora.jpeg" alt="" className=" rounded-xl w-full object-cover"/>
+              </a>
+            </div>
           </div>
         </section>
 
         {/* follow on */}
         <section id="follow-on" className="mt-20 pt-24 -mt-24 mb-10">
           <div className="text-center font-semibold">
-            <h2 className="text-5xl font-bold">Follow Me</h2>
+            <h2 className="text-7xl font-bold">Follow Me</h2>
           </div>
-          <div className="flex justify-center mt-10 mb-20 gap-20 font-semibold text-2xl">
-            <div>
-              <a href="#">
-                <img src="/linkedIn.jpg" alt="LinkedIn" className="w-14 h-14 rounded-xl hover:scale-110 transition-transform"/>
+          <div className="flex justify-center mt-20 mb-20 gap-20 font-semibold text-2xl">
+            <div className="group cursor-pointer">
+              <a href="https://www.linkedin.com/in/gagana-kalhara-7b5602376" target="_blank">
+                <img src="/linkedIn.jpg" alt="LinkedIn" className="w-14 h-14 ml-4 mb-4 rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:shadow-[0_0_25px_5px_rgba(128,0,255,0.7)]"/>
               </a>
-              <p className="">LinkedIn</p>
+              <p className="group-hover:scale-110 transition">LinkedIn</p>
             </div>
-            <div>
-              <a href="#">
-                <img src="/github.jpg" alt="GitHub" className="w-14 h-14 rounded-xl hover:scale-110 transition-transform"/>
+            <div className="group cursor-pointer">
+              <a href="https://github.com/gaganakalhara08" target="_blank">
+                <img src="/github.jpg" alt="GitHub" className="w-14 h-14 ml-3 mb-4 rounded-xl group-hover:scale-110 group-hover:shadow-[0_0_25px_5px_rgba(128,0,255,0.7)] transition-transform"/>
               </a>
-              <p>GitHub</p>
+              <p className="group-hover:scale-110">GitHub</p>
             </div>
-            <div>
-              <a href="#">
-                <img src="/whatsapp.jpg" alt="WhatsApp" className="w-14 h-14 rounded-xl hover:scale-110 transition-transform"/>
+            <div className="group cursor-pointer transition">
+              <a href="https://wa.me/94701825519" target="_blank">
+                <img src="/whatsapp.jpg" alt="WhatsApp" className="w-14 h-14 ml-6 mb-4 rounded-xl group-hover:scale-110 group-hover:shadow-[0_0_25px_5px_rgba(128,0,255,0.7)] transition-transform"/>
               </a>
-              <p>WhatsApp</p>
+              <p className="group-hover:scale-110 transition">WhatsApp</p>
             </div>
-            <div>
-              <a href="#">
-                <img src="/instagram.jpg" alt="Instagram" className="w-14 h-14 rounded-xl hover:scale-110 transition-transform"/>
+            <div className="group cursor-pointer transition">
+              <a href="https://www.instagram.com/kalha_xx_ra?igsh=YjQyYnY1dDZnYXQ1&utm_source=qr" target="_blank">
+                <img src="/instagram.jpg" alt="Instagram" className="w-14 h-14 ml-6 mb-4 rounded-xl group-hover:scale-110 group-hover:shadow-[0_0_25px_5px_rgba(128,0,255,0.7)] transition-transform"/>
               </a>
-              <p>Instagram</p>
+              <p className="group-hover:scale-110 transition">Instagram</p>
             </div>
-            <div>
-              <a href="#">
-                <img src="/facebook.jpg" alt="Facebook" className="w-14 h-14 rounded-xl hover:scale-110 transition-transform"/>
+            <div className="group cursor-pointer transition">
+              <a href="https://www.facebook.com/share/16eHh4xBpk/?mibextid=wwXIfr" target="_blank">
+                <img src="/facebook.jpg" alt="Facebook" className="w-14 h-14 ml-5 mb-4 rounded-xl group-hover:scale-110 group-hover:shadow-[0_0_25px_5px_rgba(128,0,255,0.7)] transition-transform"/>
               </a>
-              <p>Facebook</p>
+              <p className="group-hover:scale-110 transition">Facebook</p>
             </div>
           </div>
         </section>
@@ -117,7 +134,7 @@ function Portfolio() {
         <section id="contact" className="mt-10 pt-24 -mt-24 mb-10">
           <h2 className="text-7xl font-bold text-center">Get In Touch</h2>
 
-          <div className="grid md:grid-cols-2 text-white gap-5 mt-10 font-semibold">
+          <div className="grid md:grid-cols-2 text-white gap-5 mt-20 font-semibold">
             <aside className="">
               <h3 className="font-bold text-5xl bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent mb-10">Quick details</h3>
               <div className="">
