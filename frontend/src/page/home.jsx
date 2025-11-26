@@ -18,8 +18,6 @@ function Portfolio() {
     message: "",
   });
 
-  const [status, setStatus] = useState("");
-
   const handleChange = (e) => {
     setFormData({ 
       ...formData, 
@@ -31,14 +29,14 @@ function Portfolio() {
     e.preventDefault();
 
     emailjs.send(
-      "myPortfolio2003",      // ← CHANGE THIS
-      "template_rtrj7un",     // ← CHANGE THIS
+      "myPortfolio2003",      
+      "template_rtrj7un",     
       {
         name: formData.name,
         email: formData.email,
         message: formData.message,
       },
-      "yt16dUm-Plecxm2I_"       // ← CHANGE THIS
+      "yt16dUm-Plecxm2I_"    
     )
     .then(() => {
       toast.success("Message sent successfully!");
@@ -90,10 +88,10 @@ function Portfolio() {
               ))}
           </nav>
           
-          <div className="hidden text-white sm:block mr-20">
+          <div className="hidden text-white sm:block mr-20 hover:scale-105 transition-transform duration-300">
             <a
               href="#contact-with-me"
-              className="px-3 py-2 text-white rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 font-semibold transition-all hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/50">
+              className="px-3 py-2 text-white rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 font-semibold hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-500">
                 Contact With Me
             </a>
           </div>
@@ -138,13 +136,16 @@ function Portfolio() {
 
           <div className="p-6 shadow-inner text-center font-semibold">
             <h1 className="text-7xl font-bold ">About Me</h1>
-            <p className="text-white-400 mt-10 md:text-lg">
+            <p className="text-white mt-10 md:text-lg">
               Hi! I'm an undergraduate at SLIIT, currently in my 2nd year, 2nd semester, following the BSc (Hons) specialization in Information Technology. I love creating digital solutions, exploring new technologies, and developing projects that challenge my creativity and logic.
               I'm always excited to learn, experiment, and improve my skills — whether it's coding, UI/UX, problem-solving, or building full-stack applications. My goal is to grow into a skilled IT professional who can contribute to meaningful and innovative tech projects.
             </p>
-            <hr className="mt-10 max-w-7xl"></hr>
-             
-            
+            <div className="mt-20 hover:scale-105 transition-transform duration-300 hover:text-white">
+              <a href="" target="_blank" className="bg-gradient-to-r from-purple-600 to-indigo-500 text-xl hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 text-white p-3 rounded-md">
+                My Resume
+              </a>
+            </div>
+            <hr className="mt-20 max-w-7xl"></hr> 
           </div>
         </section>
 
