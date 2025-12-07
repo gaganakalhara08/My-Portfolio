@@ -5,7 +5,7 @@ import ScrollAnimation from "../components/scrollAnimation";
 import { fadeUp, fadeLeft, scaleIn} from "../util/animation";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub, FaPython, FaJava} from "react-icons/fa";
 /* import { FaFacebook, FaInstagram, FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa"; */
-import { SiTailwindcss, SiExpress, SiMongodb, SiFigma, SiPostman } from "react-icons/si";
+import { SiC, SiCplusplus, SiTailwindcss, SiExpress, SiMongodb, SiFigma, SiPostman } from "react-icons/si";
 
 
 function Portfolio() {
@@ -69,6 +69,8 @@ function Portfolio() {
     { name: "Figma", icon: <SiFigma className=" text-7xl" /> },
     { name: "GitHub", icon: <FaGithub className=" text-7xl text-white-600" /> },
     { name: "Postman", icon: <SiPostman className=" text-7xl text-orange-500" /> },
+    {name: "C", icon: <SiC className=" text-7xl text-blue-600" /> },
+    {name: "C++", icon: <SiCplusplus className=" text-7xl text-blue-600" /> },
   ];
 
   return (
@@ -120,7 +122,7 @@ function Portfolio() {
         <section id="home" className="pt-24 -mt-24 mb-10">
           {/* Profile Card */}
           <aside className=" p-5 rounded-xl">
-            <div className="w-60 h-60 rounded-full transition-transform duration-300 ease-in-out overflow-hidden hover:scale-105 border-4 border-white/5 items-center mx-auto mb-4">
+            <div className="w-60 h-60 rounded-full transition-transform duration-300  overflow-hidden hover:scale-105 border-4 border-white/5 items-center mx-auto mb-4">
               <img
                 src="/profile.jpg"
                 className="w-full h-full object-cover"
