@@ -148,7 +148,7 @@ function Portfolio() {
               I'm always excited to learn, experiment, and improve my skills — whether it's coding, UI/UX, problem-solving, or building full-stack applications. My goal is to grow into a skilled IT professional who can contribute to meaningful and innovative tech projects.
             </p>
             <div className="mt-20 hover:scale-105 transition-transform duration-300 hover:text-white">
-              <a href="https://drive.google.com/file/d/1_HoShV7a2dnpYIGiAGhN31WBxCP78oIm/view?usp=sharing" target="_blank" className="bg-gradient-to-r from-purple-600 to-indigo-500 text-xl hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 text-white p-3 rounded-md">
+              <a href="https://drive.google.com/drive/folders/11paS3g8hR6DrIi8tkiern9MvN97RH-Vb" target="_blank" className="bg-gradient-to-r from-purple-600 to-indigo-500 text-xl hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 text-white p-3 rounded-md">
                 My Resume
               </a>
             </div>
